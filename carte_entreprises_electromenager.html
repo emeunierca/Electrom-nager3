@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_67bed7af1e23e15f03d4014a51cf524e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_67bed7af1e23e15f03d4014a51cf524e" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_67bed7af1e23e15f03d4014a51cf524e = L.map(
+                "map_67bed7af1e23e15f03d4014a51cf524e",
+                {
+                    center: [46.603354, 1.888334],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 6,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_31a0bb2e2cd6c9ba65be81085661d2c1 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_31a0bb2e2cd6c9ba65be81085661d2c1.addTo(map_67bed7af1e23e15f03d4014a51cf524e);
+        
+    
+            var marker_d32fce32f7987b9a9db774897089a1ee = L.marker(
+                [46.204391, 5.225],
+                {}
+            ).addTo(map_67bed7af1e23e15f03d4014a51cf524e);
+        
+    
+        var popup_8761b86fe21c1ae143a70cd3e52a9183 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5291fba986685b22e7203f607b79c6c9 = $(`<div id="html_5291fba986685b22e7203f607b79c6c9" style="width: 100.0%; height: 100.0%;"><b>SEB</b><br>Groupe SEB, leader mondial du petit électroménager.</div>`)[0];
+                popup_8761b86fe21c1ae143a70cd3e52a9183.setContent(html_5291fba986685b22e7203f607b79c6c9);
+            
+        
+
+        marker_d32fce32f7987b9a9db774897089a1ee.bindPopup(popup_8761b86fe21c1ae143a70cd3e52a9183)
+        ;
+
+        
+    
+    
+            marker_d32fce32f7987b9a9db774897089a1ee.bindTooltip(
+                `<div>
+                     SEB
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_053b97939a641cafa824121b0ab61cf2 = L.marker(
+                [48.7689, 0.1867],
+                {}
+            ).addTo(map_67bed7af1e23e15f03d4014a51cf524e);
+        
+    
+        var popup_8cb858e2aed3edacdf29dcb6b68df171 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_59d32c5aeb3b7316b56684b74b540e3b = $(`<div id="html_59d32c5aeb3b7316b56684b74b540e3b" style="width: 100.0%; height: 100.0%;"><b>Moulinex</b><br>Moulinex, marque française d'électroménager appartenant au Groupe SEB.</div>`)[0];
+                popup_8cb858e2aed3edacdf29dcb6b68df171.setContent(html_59d32c5aeb3b7316b56684b74b540e3b);
+            
+        
+
+        marker_053b97939a641cafa824121b0ab61cf2.bindPopup(popup_8cb858e2aed3edacdf29dcb6b68df171)
+        ;
+
+        
+    
+    
+            marker_053b97939a641cafa824121b0ab61cf2.bindTooltip(
+                `<div>
+                     Moulinex
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2437739ec291d134b032865bd40d7aec = L.marker(
+                [48.5846, 7.7508],
+                {}
+            ).addTo(map_67bed7af1e23e15f03d4014a51cf524e);
+        
+    
+        var popup_21177c35792ea26fb1e45330e4a4ac1a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0e66869d5d7570bb741b31949f1963e7 = $(`<div id="html_0e66869d5d7570bb741b31949f1963e7" style="width: 100.0%; height: 100.0%;"><b>Rowenta</b><br>Rowenta, fabricant français d'appareils électroménagers de haute qualité.</div>`)[0];
+                popup_21177c35792ea26fb1e45330e4a4ac1a.setContent(html_0e66869d5d7570bb741b31949f1963e7);
+            
+        
+
+        marker_2437739ec291d134b032865bd40d7aec.bindPopup(popup_21177c35792ea26fb1e45330e4a4ac1a)
+        ;
+
+        
+    
+    
+            marker_2437739ec291d134b032865bd40d7aec.bindTooltip(
+                `<div>
+                     Rowenta
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e32d35d36bce18603786071477c5b94d = L.marker(
+                [45.8992, 6.1286],
+                {}
+            ).addTo(map_67bed7af1e23e15f03d4014a51cf524e);
+        
+    
+        var popup_b45f4fb85c32d20c7830a7161831ca0f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_802abe00f431300606ac3aafcc2e79f3 = $(`<div id="html_802abe00f431300606ac3aafcc2e79f3" style="width: 100.0%; height: 100.0%;"><b>Tefal</b><br>Tefal, marque française spécialisée dans les ustensiles de cuisine et les appareils électroménagers.</div>`)[0];
+                popup_b45f4fb85c32d20c7830a7161831ca0f.setContent(html_802abe00f431300606ac3aafcc2e79f3);
+            
+        
+
+        marker_e32d35d36bce18603786071477c5b94d.bindPopup(popup_b45f4fb85c32d20c7830a7161831ca0f)
+        ;
+
+        
+    
+    
+            marker_e32d35d36bce18603786071477c5b94d.bindTooltip(
+                `<div>
+                     Tefal
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_03e53f050a4c1896fc94df9c00860187 = L.marker(
+                [45.746, 4.842],
+                {}
+            ).addTo(map_67bed7af1e23e15f03d4014a51cf524e);
+        
+    
+        var popup_f16c9b657e67d548660565731b7d656f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1b6c4d2c0c2f500e77ab4c87c22e4952 = $(`<div id="html_1b6c4d2c0c2f500e77ab4c87c22e4952" style="width: 100.0%; height: 100.0%;"><b>Calor</b><br>Calor, marque française reconnue pour ses fers à repasser et autres appareils électroménagers.</div>`)[0];
+                popup_f16c9b657e67d548660565731b7d656f.setContent(html_1b6c4d2c0c2f500e77ab4c87c22e4952);
+            
+        
+
+        marker_03e53f050a4c1896fc94df9c00860187.bindPopup(popup_f16c9b657e67d548660565731b7d656f)
+        ;
+
+        
+    
+    
+            marker_03e53f050a4c1896fc94df9c00860187.bindTooltip(
+                `<div>
+                     Calor
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_11cad93434dfef94494139cfb876067b = L.marker(
+                [48.866, 2.333],
+                {}
+            ).addTo(map_67bed7af1e23e15f03d4014a51cf524e);
+        
+    
+        var popup_7548dbbd489e392041b9c97d86bb7e07 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dd8e0527775f9f04a28785da18f64a37 = $(`<div id="html_dd8e0527775f9f04a28785da18f64a37" style="width: 100.0%; height: 100.0%;"><b>Magimix</b><br>Magimix, fabricant français d'appareils de cuisine innovants.</div>`)[0];
+                popup_7548dbbd489e392041b9c97d86bb7e07.setContent(html_dd8e0527775f9f04a28785da18f64a37);
+            
+        
+
+        marker_11cad93434dfef94494139cfb876067b.bindPopup(popup_7548dbbd489e392041b9c97d86bb7e07)
+        ;
+
+        
+    
+    
+            marker_11cad93434dfef94494139cfb876067b.bindTooltip(
+                `<div>
+                     Magimix
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d11ff7428c09c70b533c1161899fb654 = L.marker(
+                [50.6927, 3.1788],
+                {}
+            ).addTo(map_67bed7af1e23e15f03d4014a51cf524e);
+        
+    
+        var popup_c793c7ebe4c1b0e1db4c7bd49262fe92 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3514e0a74b588496ea41c28ef91ac62b = $(`<div id="html_3514e0a74b588496ea41c28ef91ac62b" style="width: 100.0%; height: 100.0%;"><b>Whirlpool</b><br>Whirlpool France, fabricant d'appareils électroménagers.</div>`)[0];
+                popup_c793c7ebe4c1b0e1db4c7bd49262fe92.setContent(html_3514e0a74b588496ea41c28ef91ac62b);
+            
+        
+
+        marker_d11ff7428c09c70b533c1161899fb654.bindPopup(popup_c793c7ebe4c1b0e1db4c7bd49262fe92)
+        ;
+
+        
+    
+    
+            marker_d11ff7428c09c70b533c1161899fb654.bindTooltip(
+                `<div>
+                     Whirlpool
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7b735789e13c155018c45bb5c57ff26b = L.marker(
+                [48.8566, 2.3522],
+                {}
+            ).addTo(map_67bed7af1e23e15f03d4014a51cf524e);
+        
+    
+        var popup_531cf49c320a3180d10aee7f8888bbbe = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_affe683530843a6da83a8a3bfd1b00d8 = $(`<div id="html_affe683530843a6da83a8a3bfd1b00d8" style="width: 100.0%; height: 100.0%;"><b>Brandt</b><br>Brandt, une marque française d'appareils électroménagers.</div>`)[0];
+                popup_531cf49c320a3180d10aee7f8888bbbe.setContent(html_affe683530843a6da83a8a3bfd1b00d8);
+            
+        
+
+        marker_7b735789e13c155018c45bb5c57ff26b.bindPopup(popup_531cf49c320a3180d10aee7f8888bbbe)
+        ;
+
+        
+    
+    
+            marker_7b735789e13c155018c45bb5c57ff26b.bindTooltip(
+                `<div>
+                     Brandt
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1409875f4492c76330d56eb4e8222ea1 = L.marker(
+                [48.8584, 2.2945],
+                {}
+            ).addTo(map_67bed7af1e23e15f03d4014a51cf524e);
+        
+    
+        var popup_b3dd5078dd8ef5537b10cc224d869d10 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_41c0aefab54e47047cada55d4f73cfff = $(`<div id="html_41c0aefab54e47047cada55d4f73cfff" style="width: 100.0%; height: 100.0%;"><b>Electrolux</b><br>Electrolux, entreprise suédoise avec une forte présence en France.</div>`)[0];
+                popup_b3dd5078dd8ef5537b10cc224d869d10.setContent(html_41c0aefab54e47047cada55d4f73cfff);
+            
+        
+
+        marker_1409875f4492c76330d56eb4e8222ea1.bindPopup(popup_b3dd5078dd8ef5537b10cc224d869d10)
+        ;
+
+        
+    
+    
+            marker_1409875f4492c76330d56eb4e8222ea1.bindTooltip(
+                `<div>
+                     Electrolux
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_43d8da0f4cddee4682787255b58c0a86 = L.marker(
+                [48.7758, 9.1829],
+                {}
+            ).addTo(map_67bed7af1e23e15f03d4014a51cf524e);
+        
+    
+        var popup_fb32e482c9db2a329bba2ebd02733857 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a32ab55084a5377529a8b486a91830d5 = $(`<div id="html_a32ab55084a5377529a8b486a91830d5" style="width: 100.0%; height: 100.0%;"><b>Bosch</b><br>Bosch, entreprise allemande présente en France avec des produits électroménagers.</div>`)[0];
+                popup_fb32e482c9db2a329bba2ebd02733857.setContent(html_a32ab55084a5377529a8b486a91830d5);
+            
+        
+
+        marker_43d8da0f4cddee4682787255b58c0a86.bindPopup(popup_fb32e482c9db2a329bba2ebd02733857)
+        ;
+
+        
+    
+    
+            marker_43d8da0f4cddee4682787255b58c0a86.bindTooltip(
+                `<div>
+                     Bosch
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2b8449ea83449a86bf2405148928a7d7 = L.marker(
+                [48.1351, 11.582],
+                {}
+            ).addTo(map_67bed7af1e23e15f03d4014a51cf524e);
+        
+    
+        var popup_33ada80239999d2c8a6c450b3152cea2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2f7257658072cc98afa9404e7dce0f8e = $(`<div id="html_2f7257658072cc98afa9404e7dce0f8e" style="width: 100.0%; height: 100.0%;"><b>Miele</b><br>Miele, fabricant d'appareils électroménagers haut de gamme.</div>`)[0];
+                popup_33ada80239999d2c8a6c450b3152cea2.setContent(html_2f7257658072cc98afa9404e7dce0f8e);
+            
+        
+
+        marker_2b8449ea83449a86bf2405148928a7d7.bindPopup(popup_33ada80239999d2c8a6c450b3152cea2)
+        ;
+
+        
+    
+    
+            marker_2b8449ea83449a86bf2405148928a7d7.bindTooltip(
+                `<div>
+                     Miele
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_40d1d052b309ed81b946f5a0f415002a = L.marker(
+                [48.1351, 11.582],
+                {}
+            ).addTo(map_67bed7af1e23e15f03d4014a51cf524e);
+        
+    
+        var popup_d31a86f1935ff15fc4609253343996a2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_24a7c794de00127170611a8465d47fa7 = $(`<div id="html_24a7c794de00127170611a8465d47fa7" style="width: 100.0%; height: 100.0%;"><b>Siemens</b><br>Siemens, entreprise allemande d'électroménager et électronique.</div>`)[0];
+                popup_d31a86f1935ff15fc4609253343996a2.setContent(html_24a7c794de00127170611a8465d47fa7);
+            
+        
+
+        marker_40d1d052b309ed81b946f5a0f415002a.bindPopup(popup_d31a86f1935ff15fc4609253343996a2)
+        ;
+
+        
+    
+    
+            marker_40d1d052b309ed81b946f5a0f415002a.bindTooltip(
+                `<div>
+                     Siemens
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e770a555d22df4ee8cf9372acb90840d = L.marker(
+                [37.5665, 126.978],
+                {}
+            ).addTo(map_67bed7af1e23e15f03d4014a51cf524e);
+        
+    
+        var popup_d55033b4837eeabc53cee97fb1a3ae85 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f45fc5641e2dd1fab513fb5120edc9ce = $(`<div id="html_f45fc5641e2dd1fab513fb5120edc9ce" style="width: 100.0%; height: 100.0%;"><b>Samsung</b><br>Samsung Electronics, géant de l'électronique et de l'électroménager.</div>`)[0];
+                popup_d55033b4837eeabc53cee97fb1a3ae85.setContent(html_f45fc5641e2dd1fab513fb5120edc9ce);
+            
+        
+
+        marker_e770a555d22df4ee8cf9372acb90840d.bindPopup(popup_d55033b4837eeabc53cee97fb1a3ae85)
+        ;
+
+        
+    
+    
+            marker_e770a555d22df4ee8cf9372acb90840d.bindTooltip(
+                `<div>
+                     Samsung
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_df8c6e8f1f8c4019f1a436cb4014d3c9 = L.marker(
+                [37.551, 126.988],
+                {}
+            ).addTo(map_67bed7af1e23e15f03d4014a51cf524e);
+        
+    
+        var popup_85815ade2836d8393b7e6ec82aaa89aa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9a1503aba5f633c6ff8bbd00922c62ca = $(`<div id="html_9a1503aba5f633c6ff8bbd00922c62ca" style="width: 100.0%; height: 100.0%;"><b>LG Electronics</b><br>LG Electronics, un autre leader dans le domaine de l'électroménager.</div>`)[0];
+                popup_85815ade2836d8393b7e6ec82aaa89aa.setContent(html_9a1503aba5f633c6ff8bbd00922c62ca);
+            
+        
+
+        marker_df8c6e8f1f8c4019f1a436cb4014d3c9.bindPopup(popup_85815ade2836d8393b7e6ec82aaa89aa)
+        ;
+
+        
+    
+    
+            marker_df8c6e8f1f8c4019f1a436cb4014d3c9.bindTooltip(
+                `<div>
+                     LG Electronics
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d00901cc3030d552841ff1adacd6f60f = L.marker(
+                [51.7519, -1.2578],
+                {}
+            ).addTo(map_67bed7af1e23e15f03d4014a51cf524e);
+        
+    
+        var popup_9f180a2ad365a7f847f1e68963703918 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_86c1c99432f709095473c3faf55a7610 = $(`<div id="html_86c1c99432f709095473c3faf55a7610" style="width: 100.0%; height: 100.0%;"><b>Dyson</b><br>Dyson, connue pour ses aspirateurs et autres appareils électroménagers innovants.</div>`)[0];
+                popup_9f180a2ad365a7f847f1e68963703918.setContent(html_86c1c99432f709095473c3faf55a7610);
+            
+        
+
+        marker_d00901cc3030d552841ff1adacd6f60f.bindPopup(popup_9f180a2ad365a7f847f1e68963703918)
+        ;
+
+        
+    
+    
+            marker_d00901cc3030d552841ff1adacd6f60f.bindTooltip(
+                `<div>
+                     Dyson
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8535528de4fcafdff3779fd0c285528e = L.marker(
+                [36.0662, 120.3826],
+                {}
+            ).addTo(map_67bed7af1e23e15f03d4014a51cf524e);
+        
+    
+        var popup_a9e88f64ab45bffcf62ee861f5d369d5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_424706cfac8f78411d47d11656e7a308 = $(`<div id="html_424706cfac8f78411d47d11656e7a308" style="width: 100.0%; height: 100.0%;"><b>Haier</b><br>Haier, fabricant chinois d'appareils électroménagers avec une présence en France.</div>`)[0];
+                popup_a9e88f64ab45bffcf62ee861f5d369d5.setContent(html_424706cfac8f78411d47d11656e7a308);
+            
+        
+
+        marker_8535528de4fcafdff3779fd0c285528e.bindPopup(popup_a9e88f64ab45bffcf62ee861f5d369d5)
+        ;
+
+        
+    
+    
+            marker_8535528de4fcafdff3779fd0c285528e.bindTooltip(
+                `<div>
+                     Haier
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d9d8c79d457cf668f25ee1e9e8e6504b = L.marker(
+                [34.6937, 135.5023],
+                {}
+            ).addTo(map_67bed7af1e23e15f03d4014a51cf524e);
+        
+    
+        var popup_ffe4874192ae23d99a286ff9d592f2fa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a3a10b0412e0dfc524bff814a105d808 = $(`<div id="html_a3a10b0412e0dfc524bff814a105d808" style="width: 100.0%; height: 100.0%;"><b>Panasonic</b><br>Panasonic, entreprise japonaise d'électronique et d'électroménager.</div>`)[0];
+                popup_ffe4874192ae23d99a286ff9d592f2fa.setContent(html_a3a10b0412e0dfc524bff814a105d808);
+            
+        
+
+        marker_d9d8c79d457cf668f25ee1e9e8e6504b.bindPopup(popup_ffe4874192ae23d99a286ff9d592f2fa)
+        ;
+
+        
+    
+    
+            marker_d9d8c79d457cf668f25ee1e9e8e6504b.bindTooltip(
+                `<div>
+                     Panasonic
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c73618942f8ac7eeb9c1e0b85f4f6c81 = L.marker(
+                [51.4416, 5.4697],
+                {}
+            ).addTo(map_67bed7af1e23e15f03d4014a51cf524e);
+        
+    
+        var popup_fb956fc520a17ee8cfb819d4998aab08 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5699427e1c9658462fa2f534a705e1ed = $(`<div id="html_5699427e1c9658462fa2f534a705e1ed" style="width: 100.0%; height: 100.0%;"><b>Philips</b><br>Philips, entreprise néerlandaise d'électronique et d'électroménager.</div>`)[0];
+                popup_fb956fc520a17ee8cfb819d4998aab08.setContent(html_5699427e1c9658462fa2f534a705e1ed);
+            
+        
+
+        marker_c73618942f8ac7eeb9c1e0b85f4f6c81.bindPopup(popup_fb956fc520a17ee8cfb819d4998aab08)
+        ;
+
+        
+    
+    
+            marker_c73618942f8ac7eeb9c1e0b85f4f6c81.bindTooltip(
+                `<div>
+                     Philips
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c47ff011a3ef67fc994e2d581e1b4ce0 = L.marker(
+                [45.658, 9.655],
+                {}
+            ).addTo(map_67bed7af1e23e15f03d4014a51cf524e);
+        
+    
+        var popup_f9d165c8d6f0c96b31397ea15f4044b5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_173f0eb9391176b09a99c4dbf838d536 = $(`<div id="html_173f0eb9391176b09a99c4dbf838d536" style="width: 100.0%; height: 100.0%;"><b>Candy</b><br>Candy, entreprise italienne spécialisée dans les appareils électroménagers.</div>`)[0];
+                popup_f9d165c8d6f0c96b31397ea15f4044b5.setContent(html_173f0eb9391176b09a99c4dbf838d536);
+            
+        
+
+        marker_c47ff011a3ef67fc994e2d581e1b4ce0.bindPopup(popup_f9d165c8d6f0c96b31397ea15f4044b5)
+        ;
+
+        
+    
+    
+            marker_c47ff011a3ef67fc994e2d581e1b4ce0.bindTooltip(
+                `<div>
+                     Candy
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_871e5889c7cdbcf08cfb2bb66aa1a062 = L.marker(
+                [51.5074, -0.1278],
+                {}
+            ).addTo(map_67bed7af1e23e15f03d4014a51cf524e);
+        
+    
+        var popup_8c2a888349297ea8e2423bd6422ec001 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_da91691851baf03992e073ba1b111b53 = $(`<div id="html_da91691851baf03992e073ba1b111b53" style="width: 100.0%; height: 100.0%;"><b>Kenwood</b><br>Kenwood, entreprise britannique connue pour ses appareils de cuisine.</div>`)[0];
+                popup_8c2a888349297ea8e2423bd6422ec001.setContent(html_da91691851baf03992e073ba1b111b53);
+            
+        
+
+        marker_871e5889c7cdbcf08cfb2bb66aa1a062.bindPopup(popup_8c2a888349297ea8e2423bd6422ec001)
+        ;
+
+        
+    
+    
+            marker_871e5889c7cdbcf08cfb2bb66aa1a062.bindTooltip(
+                `<div>
+                     Kenwood
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9d366265b08f48c1244ba493de4b9499 = L.marker(
+                [45.663, 12.245],
+                {}
+            ).addTo(map_67bed7af1e23e15f03d4014a51cf524e);
+        
+    
+        var popup_27fa98e5280c5c8f950b0f3b7ff9080d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_04780b51fee5edaf613ab8acb3e6bc7c = $(`<div id="html_04780b51fee5edaf613ab8acb3e6bc7c" style="width: 100.0%; height: 100.0%;"><b>De'Longhi</b><br>De'Longhi, fabricant italien d'appareils électroménagers.</div>`)[0];
+                popup_27fa98e5280c5c8f950b0f3b7ff9080d.setContent(html_04780b51fee5edaf613ab8acb3e6bc7c);
+            
+        
+
+        marker_9d366265b08f48c1244ba493de4b9499.bindPopup(popup_27fa98e5280c5c8f950b0f3b7ff9080d)
+        ;
+
+        
+    
+    
+            marker_9d366265b08f48c1244ba493de4b9499.bindTooltip(
+                `<div>
+                     De'Longhi
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dfbffbbbd3eec382571d6cdaf8d92568 = L.marker(
+                [50.1109, 8.6821],
+                {}
+            ).addTo(map_67bed7af1e23e15f03d4014a51cf524e);
+        
+    
+        var popup_67dfb826987e10b8552fa9c5e964bdad = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_624c557079c168803dbc7765bdfba9f7 = $(`<div id="html_624c557079c168803dbc7765bdfba9f7" style="width: 100.0%; height: 100.0%;"><b>Braun</b><br>Braun, entreprise allemande spécialisée dans les petits appareils électroménagers.</div>`)[0];
+                popup_67dfb826987e10b8552fa9c5e964bdad.setContent(html_624c557079c168803dbc7765bdfba9f7);
+            
+        
+
+        marker_dfbffbbbd3eec382571d6cdaf8d92568.bindPopup(popup_67dfb826987e10b8552fa9c5e964bdad)
+        ;
+
+        
+    
+    
+            marker_dfbffbbbd3eec382571d6cdaf8d92568.bindTooltip(
+                `<div>
+                     Braun
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
